@@ -1,0 +1,13 @@
+<ModOps>
+  <ModOp Type="add" GUID='122362' Path="/Values/ProductStorageList/ProductList">
+      <Item>
+        <Product>133183</Product>
+      </Item>
+      <Item>
+        <Product>25506</Product>
+      </Item>
+      <Item>
+        <Product>1010217</Product>
+      </Item>
+  </ModOp>
+</ModOps>
