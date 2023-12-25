@@ -13,9 +13,9 @@ jobs:
       - name: Extract metadata
         id: metadata
         run: |
-          GAME_ID=$(jq '.game' metadata.json)
-          MOD_ID=$(jq '.mod' metadata.json)
-          VERSION=$(jq '.version' metadata.json)
+          GAME_ID=$(jq '.game' modinfo.json)
+          MOD_ID=$(jq '.mod' modinfo.json)
+          VERSION=$(jq '.version' modinfo.json)
 
           echo "GAME=$GAME_ID" >> $GITHUB_OUTPUT
           echo "MOD=$MOD_ID" >> $GITHUB_OUTPUT
