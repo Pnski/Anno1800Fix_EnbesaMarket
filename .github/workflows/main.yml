@@ -13,6 +13,7 @@ jobs:
       - name: Extract metadata
         id: metadata
         run: |
+          Game_ID=$(jq '.game' ./modinfo.json)
           GAME_ID=$(jq '.game' modinfo.json)
           MOD_ID=$(jq '.mod' modinfo.json)
           VERSION=$(jq '.version' modinfo.json)
